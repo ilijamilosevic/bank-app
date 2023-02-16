@@ -1,0 +1,25 @@
+import React from 'react'
+import styles, {layout} from '../style'
+import { card } from '../assets'
+import Button from './Button'
+
+const CardDeal = () => {
+  return (
+    <section id="card" className={layout.section}>
+        <div className={layout.sectionInfo}>
+          <h2 className={styles.heading2}>
+          Find a better card deal in few easy steps.
+          </h2>
+          <p className={`${styles.paragraph} max-w-[470px]`}>
+          Arcu tortor, purus in mattis at sed integer faucibus. Aliquet quis aliquet eget mauris tortor.ç Aliquet ultrices ac, ametau.
+          </p>
+          <Button styles= "mt-10" />
+        </div>
+        <div className={`${layout.sectionImg} flex-col`}>
+          <img src={card} alt="card" className="w-[100%] h-[100%] relative z-[5]"/>
+        </div>
+    </section>
+  )
+}
+
+export default CardDeal
